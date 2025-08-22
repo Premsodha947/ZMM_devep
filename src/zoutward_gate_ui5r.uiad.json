@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Outward Gate Entry",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Outward Gate Entry"
+  },
+  "ui5AppDetails": {
+    "appId": "com.scp.fiori.outwardgateentry"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CCF814BEF311F92DEE3482FA158B7E5C13938101_TM",
+    "semanticObject": "zoutwardgate",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CCF814BEF311F92DEE3482FA158B7E5C13938101_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Outward Gate Entry"
+      }
+    }
+  ]
+}

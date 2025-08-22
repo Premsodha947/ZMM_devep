@@ -1,0 +1,16 @@
+@EndUserText.label: 'F4 Help for Inward and Outward Gate Entry Apps'
+define service ZS_MM_F4Help {
+  expose ZC_Plant_F4Help             as PlantF4Help;
+  expose ZC_Material_F4Help          as ProductF4Help;
+  expose ZC_PurchaseOrder_F4help     as PurOrderF4Help;
+  expose ZC_SchAgreement_F4Help      as SchAgrF4Help;
+  expose ZC_PurOrderItemDet          as PurOrderItemDet;
+  expose ZC_SchAgrItemDet            as SchAgrItemDet;
+  expose ZC_GateEnrtyHdr_Det         as GateEntryNoF4Help;
+  expose ZC_GateEntryInvoiceNoF4Help as GateEntryInvoiceNoF4Help;
+  expose ZC_MaterialItem_Det         as ItemforPo;
+  expose ZC_GateEnrtyItm_Det         as InwardItemDet;
+  expose ZC_ItemforSchAgr_Det        as ItemforSchAgr;
+  expose I_Supplier                  as SupplierVh;
+  expose ZC_BillingDoc_Outgate       as BillingOutgate;
+}

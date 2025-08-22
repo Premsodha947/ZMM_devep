@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Monthly Gross Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Monthly Gross Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zgrossreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7A2E35564CDCEF243923209207803ABD22BD30FC_TM",
+    "semanticObject": "zgrossreport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7A2E35564CDCEF243923209207803ABD22BD30FC_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Monthly Gross Report",
+        "subtitle": "MACPL"
+      }
+    }
+  ]
+}

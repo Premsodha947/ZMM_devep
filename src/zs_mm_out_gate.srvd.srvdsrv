@@ -1,0 +1,7 @@
+@EndUserText.label: 'Outward Gate NEtry'
+define service ZS_MM_OUT_GATE {
+  expose ZC_BillingDoc_Outgate  as BillingDocOut;
+  expose ZC_OUTWARDGATE_HEADER1 as OutwardGateHeader;
+  expose ZC_OUTWARDGATE_ITEM    as OutwardGateItem;
+  expose ZC_Plant_F4Help        as PlantF4Help;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Authorization Matrix for Mfg. Order",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Authorization Matrix for Mfg. Order"
+  },
+  "ui5AppDetails": {
+    "appId": "zuserauth"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9FDF6967E5515EF9A623BEEE4F7F1F3417B6CCBC_TM",
+    "semanticObject": "zauthmat",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9FDF6967E5515EF9A623BEEE4F7F1F3417B6CCBC_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Authorization Matrix for Mfg. Order"
+      }
+    }
+  ]
+}

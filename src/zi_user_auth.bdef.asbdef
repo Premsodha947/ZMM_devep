@@ -1,0 +1,21 @@
+managed implementation in class zbp_i_user_auth unique;
+strict ( 2 );
+
+define behavior for ZI_USER_AUTH //alias <alias_name>
+persistent table zpp_user_auth
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  mapping for zpp_user_auth
+    {
+      userid   = userid;
+      username = username;
+      authflag = authflag;
+    }
+
+}

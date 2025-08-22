@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Customer Portal for EDI Generation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Customer Portal for EDI Generation"
+  },
+  "ui5AppDetails": {
+    "appId": "zcustedi"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_317CD4FB62E18D265F0C10CCDB7230A3116C6EC1_TM",
+    "semanticObject": "zedi_int",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_317CD4FB62E18D265F0C10CCDB7230A3116C6EC1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Customer Portal for EDI Generation"
+      }
+    }
+  ]
+}

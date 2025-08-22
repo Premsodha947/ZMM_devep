@@ -1,0 +1,21 @@
+managed implementation in class zbp_c_outward_gate unique;
+strict ( 2 );
+
+define behavior for ZC_OUTWARD_GATE //alias <alias_name
+persistent table ztmm_gate_out
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Gateoutwardnumber, DocumentNum, MaterialNum;
+
+
+  // Auto-populate material description
+  determination populateMaterialDesc on modify { field MaterialNum; }
+
+  // Number range for document_num
+  //  numbering: managed;
+}

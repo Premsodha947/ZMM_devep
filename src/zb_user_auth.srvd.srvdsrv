@@ -1,0 +1,4 @@
+@EndUserText.label: 'User Authorization Matrix for Mfg. Order'
+define service ZB_USER_AUTH {
+  expose ZI_USER_AUTH as UserMatrix;
+}

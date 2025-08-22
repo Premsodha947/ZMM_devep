@@ -1,0 +1,57 @@
+managed implementation in class zbp_i_outwardgate_header unique;
+strict ( 2 );
+
+define behavior for Z_I_OUTWARDGATE_HEADER alias OutwardGateHeader
+late numbering
+persistent table zout_gate_hdr
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) GateEntryId, QRCode;
+  association _item { create; }
+  field ( mandatory ) Plant, SystemDate, SystemTime, Vehicletype, Vehicleno, Transporter;
+
+  determination CalculateNonKeyFields on modify { field GateEntryId; }
+
+  mapping for zout_gate_hdr
+    {
+      GateEntryId = gate_entry_id;
+      Plant       = plant;
+      SystemDate  = system_date;
+      SystemTime  = system_time;
+      Transporter = transporter;
+      Vehicleno   = vehicleno;
+      Vehicletype = vehicletype;
+      Qrcode      = qrcode;
+      Status      = status;
+      Remarks     = remarks;
+    }
+}
+
+define behavior for Z_I_OUTWARD_ITEM alias OutwardGateItem
+late numbering
+persistent table zout_gate_item
+lock dependent by _Header
+authorization dependent by _Header
+//etag master <field_name>
+
+{
+  update;
+  delete;
+  field ( readonly ) GateEntryId;
+  association _Header;
+
+  mapping for zout_gate_item
+    {
+      GateEntryId = gate_entry_id;
+      Itemno      = itemno;
+      Billingno   = billingno;
+      Odnnumber   = odnnumber;
+      Ewaybill    = ewaybill;
+      Lrnumber    = lrnumber;
+    }
+}

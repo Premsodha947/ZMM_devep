@@ -1,0 +1,5 @@
+@EndUserText.label: 'Print Check'
+define service ZB_CHECK_PRINT {
+  expose ZC_CheckPrint_Det           as CheckData;
+  expose ZI_JournalEntryItemSupplier as SupplierData;
+}

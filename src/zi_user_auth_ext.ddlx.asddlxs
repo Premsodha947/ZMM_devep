@@ -1,0 +1,46 @@
+@Metadata.layer: #CORE
+@UI:{
+headerInfo:{
+                typeNamePlural: 'Authorization Matrix for Mfg. Order',
+                typeName: 'Authorization Matrix for Mfg. Order',
+                title:{ value: 'Username'}
+           }
+}
+annotate entity ZI_USER_AUTH with
+{
+  // OBJECT PAGE
+  @UI.facet: [
+               {
+                   id:              'Userid',
+                   purpose:         #STANDARD,
+                   type:            #IDENTIFICATION_REFERENCE,
+                   label:           'Userid',
+                   position:        10
+                } ,
+                {
+                   id:              'Userid',
+                   purpose:         #STANDARD,
+
+                   label:           'Userid',
+                   position:        10
+                }
+             ]
+
+   // ELEMENT LIST
+  @UI: {
+  lineItem: [{ position: 10 } ],
+  identification: [ { label: 'Userid',position: 10 } ] }
+  Userid;
+
+  @UI: {
+  lineItem: [{ position: 20 } ],
+  identification: [ {label: 'Username', position: 20 } ] }
+  Username;
+
+
+  @UI: {
+  lineItem: [{ position: 30 } ],
+  identification: [ { label: 'Authflag', position: 30 } ] }
+  Authflag;
+
+}

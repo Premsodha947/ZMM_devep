@@ -1,0 +1,6 @@
+@EndUserText.label: 'EDI Integration for customer portal'
+define service ZS_SD_EDI_INTEGRATION {
+  expose I_BillingDocument     as billingDocVh;
+  expose I_Customer            as customerVh;
+  expose ZC_BillingDocItem_Det as billingDocItemDet;
+}
